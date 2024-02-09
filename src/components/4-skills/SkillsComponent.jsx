@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-/* import { useSprings, animated } from "@react-spring/web";
- */import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs } from "react-icons/fa";
+import { useSprings, animated } from "@react-spring/web";
+ import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs } from "react-icons/fa";
 import "./Skills.css";
 import SvgPages from "../../assets/SVG/SvgPages";
 /*  import { ReactComponent as ReduxIcon } from "../../assets/imgs/icons8-redux-100.svg";
@@ -8,7 +8,7 @@ import SvgPages from "../../assets/SVG/SvgPages";
 const SkillsSection = () => {
   const [showIcons, setShowIcons] = useState(false);
 
-/*   const iconsProps = useSprings(
+   const iconsProps = useSprings(
     8, // numbers of icons
     [...Array(8)].map((_, i) => ({
       opacity: showIcons ? 1 : 0,
@@ -16,9 +16,8 @@ const SkillsSection = () => {
       config: { duration: 500 },
       delay: showIcons ? i * 300 : 0, 
     }))
-  ); */
+  ); 
 
-  const iconsProps = [{FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs} ]
   useEffect(() => {
     const handleScroll = () => {
       const skillsSection = document.getElementById("skills-section");
@@ -44,7 +43,7 @@ const SkillsSection = () => {
   return (
     <div id="skills-section">
       <h2 className="title-section">My Skills</h2>
-      <div className="icons-container">
+      <animated.div className="icons-container">
         {iconsProps.map((props, index) => (
           <div key={index} style={props}>
             {index === 0 && <FaHtml5 className="icon" />}
@@ -60,7 +59,7 @@ const SkillsSection = () => {
           
           </div>
         ))}
-      </div>
+      </animated.div>
     </div>
   );
 };
