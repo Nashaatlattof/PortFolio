@@ -18,7 +18,7 @@ const SkillsSection = () => {
     }))
   ); */
 
-  const iconsProps = [FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs ]
+  const iconsProps = [{FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs} ]
   useEffect(() => {
     const handleScroll = () => {
       const skillsSection = document.getElementById("skills-section");
