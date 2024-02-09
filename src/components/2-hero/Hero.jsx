@@ -32,8 +32,8 @@ export default function Hero({ theme , textEnter, textLeave}) {
           <img
             src={theme === "light" ? logoName : logoName1}
             alt=""
-            width={150}
-            height={150}
+            width={200}
+            height={50}
           />
         </div>
 

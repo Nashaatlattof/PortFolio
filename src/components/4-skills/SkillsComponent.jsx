@@ -43,9 +43,9 @@ const SkillsSection = () => {
   return (
     <div id="skills-section">
       <h2 className="title-section">My Skills</h2>
-      <animated.div className="icons-container">
+      <div className="icons-container">
         {iconsProps.map((props, index) => (
-          <div key={index} style={props}>
+          <animated.div key={index} style={props}>
             {index === 0 && <FaHtml5 className="icon" />}
             {index === 1 && <FaCss3 className="icon" />}
             {index === 2 && <FaReact className="icon" />}
@@ -57,9 +57,9 @@ const SkillsSection = () => {
 {/*      {  index === 7 && <ReduxIcon className="icon" />} 
  */} 
           
-          </div>
+          </animated.div>
         ))}
-      </animated.div>
+      </div>
     </div>
   );
 };
