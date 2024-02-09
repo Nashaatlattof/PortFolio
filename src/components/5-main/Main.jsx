@@ -8,7 +8,7 @@ export default function Main() {
     {
       projectTiltle: "Admin Dashboard Ecommerce",
       category: ["React", "Javascript"],
-      imgPath: "src/assets/imgs/Capture10.PNG",
+      imgPath: "/public/Capture10.png",
       repoPath:
         "https://github.com/Nashaatlattof/Admin-Dashboard-Ecommerce.git",
       demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
@@ -16,7 +16,7 @@ export default function Main() {
     {
       projectTiltle: "Ecommerce Website",
       category: ["React", "MUI", "Javascript"],
-      imgPath: "src/assets/imgs/Capture20.PNG",
+      imgPath: "/public/Capture20.png",
       repoPath:
         "https://github.com/Nashaatlattof/E-commerce-Website-Project.git",
       demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
@@ -24,35 +24,35 @@ export default function Main() {
     {
       projectTiltle: "Portfolio Template",
       category: ["Javascript", "Bootstrap"],
-      imgPath: "src/assets/imgs/Capture3.PNG",
+      imgPath: "/public/Capture3.png",
       repoPath: "https://github.com/Nashaatlattof/Portfolio-Template.git",
       demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
     },
     {
       projectTiltle: "Elzero template3",
       category: ["Html/Css", "Javascript"],
-      imgPath: "src/assets/imgs/Capture1.PNG",
+      imgPath: "/public/Capture1.png",
       repoPath: "https://github.com/Nashaatlattof/projrct-Html-Css-Js.git",
       demoPath: "https://nashaatlattof.github.io/projrct-Html-Css-Js/",
     },
     {
       projectTiltle: "static website",
       category: ["Bootstrap"],
-      imgPath: "src/assets/imgs/Capture.PNG",
+      imgPath: "/public/Capture.png",
       repoPath: "https://github.com/Nashaatlattof/Project-Bootstrap5.git",
       demoPath: "https://nashaatlattof.github.io/Project-Bootstrap5/",
     },
     {
       projectTiltle: "static website",
       category: ["Bootstrap"],
-      imgPath: "src/assets/imgs/Capture2.PNG",
+      imgPath: "/public/Capture2.png",
       repoPath: "https://github.com/Nashaatlattof/Bondi-Project.git",
       demoPath: "https://nashaatlattof.github.io/Bondi-Project/",
     },
     {
       projectTiltle: "static website",
       category: ["Html/Css"],
-      imgPath: "src/assets/imgs/5.jpg",
+      imgPath: "/public/5.jpg",
       repoPath: "https://github.com/Nashaatlattof/Project-Html-Css.git",
       demoPath: "https://nashaatlattof.github.io/Project-Html-Css/",
     },
