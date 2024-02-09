@@ -3,14 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {    
+  "scripts": {
     "dev": "vite",
-    "build": "vite build", 
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@react-spring/web": "^9.7.3",
     "cookie-universal": "^2.2.2",
     "framer-motion": "^10.16.11",
     "gh-pages": "^6.1.1",
