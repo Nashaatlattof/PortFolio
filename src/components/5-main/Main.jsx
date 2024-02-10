@@ -24,7 +24,7 @@ export default function Main() {
     {
       projectTiltle: "Portfolio Template",
       category: ["Javascript", "Bootstrap"],
-      imgPath: "Capture3.png",
+      imgPath: "DayImg.PNG",
       repoPath: "https://github.com/Nashaatlattof/Portfolio-Template.git",
       demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
     },
@@ -38,7 +38,7 @@ export default function Main() {
     {
       projectTiltle: "static website",
       category: ["Bootstrap"],
-      imgPath: "Capture.png",
+      imgPath: "BootstrapImg.PNG",
       repoPath: "https://github.com/Nashaatlattof/Project-Bootstrap5.git",
       demoPath: "https://nashaatlattof.github.io/Project-Bootstrap5/",
     },
