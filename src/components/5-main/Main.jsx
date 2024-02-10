@@ -31,7 +31,7 @@ export default function Main() {
     {
       projectTiltle: "Elzero template3",
       category: ["Html/Css", "Javascript"],
-      imgPath: "Capture10.PNG",
+      imgPath: "Capture1.PNG",
       repoPath: "https://github.com/Nashaatlattof/projrct-Html-Css-Js.git",
       demoPath: "https://nashaatlattof.github.io/projrct-Html-Css-Js/",
     },
