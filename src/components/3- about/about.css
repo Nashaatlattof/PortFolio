@@ -7,12 +7,9 @@
 .about-us .subtitle {
     margin-bottom: 3rem;
     color: var(--subtitle);
+    font-size: 1.6rem;
 }
-.about-us a {
-    color: var(--mycolor);
-    text-decoration: solid; 
-    cursor: pointer;
-}
+
 .about-us .social-data {
        display: flex;
     flex-wrap: wrap;
@@ -22,7 +19,9 @@
     padding: 3rem 0;
 }
 
-
+.about-us .info {
+width: 350px;
+}
 
 .about-us .social-bar {
     align-items: center;
@@ -34,6 +33,13 @@
 }
 .about-us .social-bar span.data-value {
     color: var(--subtitle);
+    font-size: 1.3rem;
+}
+.about-us a.data-value {
+    color: var(--mycolor);
+    text-decoration: solid; 
+    cursor: pointer;
+    font-size: 1.2rem;
 }
 .about-us .social-bar .data-key {
    color: var(--subtitle);
@@ -46,8 +52,11 @@
  
 }
 
-.about-us .cv {
-    
+.about-us .cv a {
+      color: var(--mycolor);
+    text-decoration: solid; 
+    cursor: pointer;
+    font-size: 1.1rem;
 }
 .about-us .cv .wrap-download {
 align-items: center;
@@ -79,7 +88,7 @@ filter: invert(99%) sepia(90%) saturate(246%) hue-rotate(240deg) brightness(150%
     transform: translate(-50%, -50%);
     transition: 0.5s;
 max-width: 100%;
-width: 150px;
+width: 170px;
 
  filter: invert(99%) sepia(10%) saturate(446%) hue-rotate(240deg) brightness(110%) contrast(73%);
  }

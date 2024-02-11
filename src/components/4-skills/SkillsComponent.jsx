@@ -43,6 +43,7 @@ const SkillsSection = () => {
   return (
     <div id="skills-section">
       <h2 className="title-section">My Skills</h2>
+      <p className="subtitle-section">Technologies I use?</p>
       <div className="icons-container">
         {iconsProps.map((props, index) => (
           <animated.div key={index} style={props}>
@@ -54,9 +55,8 @@ const SkillsSection = () => {
             {index === 5 && <FaBootstrap className="icon" />}
             {index === 6 && <FaJs className="icon" />}
             {index === 7 && <SvgPages className="icon" />}
-{/*      {  index === 7 && <ReduxIcon className="icon" />} 
- */} 
-          
+            {/*      {  index === 7 && <ReduxIcon className="icon" />}
+             */}
           </animated.div>
         ))}
       </div>

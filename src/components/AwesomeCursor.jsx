@@ -3,13 +3,13 @@ import "/src/App.css";
 import { motion } from "framer-motion";
 
 const AwesomeCursor = ({ cursorVariants, theme }) => {
-  const [cursorPosition, setCursorPosition] = useState({
+  let [cursorPosition, setCursorPosition] = useState({
     x: 0,
     y: 0,
   });
 
   useEffect(() => {
-    const mouseMove = (e) => {
+    let mouseMove = (e) => {
       setCursorPosition({
         x: e.clientX,
         y: e.clientY,
@@ -36,12 +36,18 @@ const AwesomeCursor = ({ cursorVariants, theme }) => {
       mixBlendMode: "difference",
       border: "1px solid gray",
     },
+    icons: {
+      x: cursorPosition.x - 25,
+      y: cursorPosition.y - 25,
+      backgroundColor:"transparent",
+    },
   };
   return (
     <motion.div
       variants={variants}
       animate={cursorVariants}
       className="cursor"
+      style={{ willChange: "transform, background-color" }}
     ></motion.div>
   );
 };

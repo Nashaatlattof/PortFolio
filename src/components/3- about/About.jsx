@@ -6,6 +6,7 @@ const About = () => {
   return (
     <section className="about-us" id="about">
       <h1 className="title-section">ABOUT ME</h1>
+      <p className="subtitle-section">Who Am I?</p>
       <p className="subtitle">
         Hi, I'm A Front-End Developer, I Can Build A Dream Website With High
         Quality, Best Performance, Best SEO, And A Responsive Website, So Don't
@@ -59,10 +60,7 @@ const About = () => {
             },
           }}
         >
-          <a
-            href="/cv-sudan.pdf"
-            download="cv-sudan.pdf"
-          >
+          <a href="/cv-sudan.pdf" download="cv-sudan.pdf">
             <div className="wrap-download">
               <img src={Svgbox} className="down-box" alt="" />
 

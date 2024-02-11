@@ -10,7 +10,7 @@
   justify-content: center;
   gap: 3rem;
   width: 80%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 #skills-section .icons-container .icon {
   display: flex;

@@ -44,12 +44,22 @@ html {
         --afterbackground: linear-gradient(to right, var(--mycolor),var(--color-afterbackground) ) 
 
 }
+.subtitle {
+       margin-bottom: 3rem;
+    color: var(--subtitle);
+    font-size: 1.6rem;
+}
+.subtitle-section {
+    color: var(--after-colorbackground);
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 3rem;
 
-
+}
  .title-section {
 position: relative;
-margin-bottom: 5rem;
-width: 20%;
+margin-bottom: 3rem;
+width: 200px;
 color: var(--mycolor);
 }
  .title-section::after {

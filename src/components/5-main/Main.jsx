@@ -11,7 +11,8 @@ export default function Main() {
       imgPath: "Capture10.PNG",
       repoPath:
         "https://github.com/Nashaatlattof/Admin-Dashboard-Ecommerce.git",
-      demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
+      demoPath:
+        "https://admin-dashboard-ecommerce-52phjnvmq-nashaatlattofs-projects.vercel.app",
     },
     {
       projectTiltle: "Ecommerce Website",
@@ -19,7 +20,7 @@ export default function Main() {
       imgPath: "Capture20.PNG",
       repoPath:
         "https://github.com/Nashaatlattof/E-commerce-Website-Project.git",
-      demoPath: "https://nashaatlattof.github.io/Portfolio-Template/",
+      demoPath: "https://e-commerce-website-project-12j9-irqlj8zes.vercel.app",
     },
     {
       projectTiltle: "Portfolio Template",
@@ -72,29 +73,51 @@ export default function Main() {
   };
 
   return (
-    <motion.main
+    <>
+      <motion.main
+        id="main"
+        className="main"
+        initial={{
+          opacity: 0,
+          // if odd index card,slide from right instead of left
+          x: 100,
+          y: -100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          y: 0,
+          transition: {
+            duration: 1, // Animation duration
+          },
+        }}
+      >
+        <h1 className="title-section">Projects</h1>
+        <p className="subtitle-section">What I did? </p>
+        <h3 className="subtitle">
+          "I have successfully completed numerous projects using React, where I
+          applied foundational concepts like hooks, JSX, props, and reusable
+          components. Furthermore, I have implemented state management in
+          diverse scenarios."
+        </h3>
 
-    id="main"
-      className="main"
-      initial={{
-        opacity: 0,
-        // if odd index card,slide from right instead of left
-        x: 100,
-        y: -100,
-      }}
-      whileInView={{
-        opacity: 1,
-        x: 0, // Slide in to its original position
-        y: 0,
-        transition: {
-          duration: 1, // Animation duration
-        },
-      }}
-    >
-      <h1 className="title-section">Projects</h1>
-      <div className="flex">
-       
-          <section className="left-section flex">
+        <div className="flex">
+          <motion.section
+            className="left-section flex"
+            initial={{
+              opacity: 0,
+              x: -300,
+              y: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+              x:0,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+          >
             <button
               onClick={() => {
                 setCurrentActive("All Projects");
@@ -115,7 +138,6 @@ export default function Main() {
             <button
               onClick={() => {
                 handleClick("Bootstrap");
-               
               }}
               className={currentActive === "Bootstrap" ? "active" : null}
             >
@@ -137,55 +159,52 @@ export default function Main() {
             >
               React
             </button>
-          </section>
-          
-      
-        <motion.section
-        className="right-section flex "
-          initial={{
-            opacity: 0,
-           
+          </motion.section>
 
-            y: 200,
-          }}
-          whileInView={{
-            opacity: 1,
-       
-            y: 0,
-            transition: {
-              duration: 1, 
-            },
-          }}
-          
-        >
-          <AnimatePresence>
-            {projects.map((item, key) => {
-              return (
-                <motion.article
-                  className="project"
-                  key={key}
-                  layout
-                  animate={{ transform: "scale(1)" }}
-                  initial={{ transform: "scale(0)" }}
-                  /* exit={{ scale: 0 }} */
-                  transition={{ type: "spring", damping: 7, stiffness: 150 }}
-                >
-                  <img src={item.imgPath} alt=""></img>
-                  <div width={366} className="overlay">
-                    <a href={item.demoPath}>
-                      <button className="icon icon-link"></button>
-                    </a>
-                    <a href={item.repoPath}>
-                     
-                      <button className="icon icon-github"></button>
-                    </a>
-                  </div>
-                </motion.article>
-              );
-            })}
-          </AnimatePresence>
-        </motion.section>
-      </div>
-    </motion.main>
+          <motion.section
+            className="right-section flex "
+            initial={{
+              opacity: 0,
+
+              y: 200,
+            }}
+            whileInView={{
+              opacity: 1,
+
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+          >
+            <AnimatePresence>
+              {projects.map((item, key) => {
+                return (
+                  <motion.article
+                    className="project"
+                    key={key}
+                    layout
+                    animate={{ transform: "scale(1)" }}
+                    initial={{ transform: "scale(0)" }}
+                    /* exit={{ scale: 0 }} */
+                    transition={{ type: "spring", damping: 7, stiffness: 150 }}
+                  >
+                    <img src={item.imgPath} alt=""></img>
+                    <div width={366} className="overlay">
+                      <a href={item.demoPath}>
+                        <button className="icon icon-link"></button>
+                      </a>
+                      <a href={item.repoPath}>
+                        <button className="icon icon-github"></button>
+                      </a>
+                    </div>
+                  </motion.article>
+                );
+              })}
+            </AnimatePresence>
+          </motion.section>
+        </div>
+      </motion.main>
+    </>
   );
 }

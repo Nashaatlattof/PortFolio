@@ -36,11 +36,27 @@ const myServices = [
 ];
 const Services = () => {
   return (
-    <section className="services">
+    <motion.section
+      className="services"
+      initial={{
+        opacity: 0,
+        // if odd index card,slide from right instead of left
+        x: -100,
+        y: -200,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0, // Slide in to its original position
+        y: 0,
+        transition: {
+          duration: 1, // Animation duration
+        },
+      }}
+    >
       <h1 className="title-section">Services</h1>
       <div className="subtitle">
-        <h1>What I Do </h1>
-        <p>
+        <p className="subtitle-section">What I Do </p>
+        <p className="subtitle">
           I help ambitious businesses like yours generate more profits by
           building awareness, driving web traffic, connecting with customers,
           and growing overall sales.
@@ -77,7 +93,7 @@ const Services = () => {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

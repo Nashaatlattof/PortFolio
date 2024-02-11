@@ -32,12 +32,21 @@ const [cursorVariants, setCursorVariants] = useState("default");
      const textLeave = () => {
        setCursorVariants("default");
      };
+     const iconsLeave = () => {
+
+      setCursorVariants("icons")
+     }
 return (
   <>
     <div className="container">
       <Header theme={theme} toggleTheme={toggleTheme} />
 
-      <Hero theme={theme} textEnter={textEnter} textLeave={textLeave} />
+      <Hero
+        theme={theme}
+        textEnter={textEnter}
+        textLeave={textLeave}
+        iconsLeave={iconsLeave}
+      />
       <div className="divider" />
       <About />
       <div className="divider" />

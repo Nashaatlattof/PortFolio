@@ -7,7 +7,7 @@ import heroAnimLight from "../../../src/assets/Animation/Animation - 17013005084
 import logoName from "../../assets/SVG/nashaat-lattouf-high-resolution-logo-black-transparent.svg"
 import logoName1 from "../../assets/SVG/nashaat-lattouf-high-resolution-logo-white-transparent.svg"
 
-export default function Hero({ theme , textEnter, textLeave}) {
+export default function Hero({ theme , textEnter, textLeave, iconsLeave}) {
   const title = "Computer and Automation Engineer, Front-End Developer".split(
     " "
   );
@@ -32,8 +32,8 @@ export default function Hero({ theme , textEnter, textLeave}) {
           <img
             src={theme === "light" ? logoName : logoName1}
             alt=""
-            width={200}
-            height={50}
+            width={250}
+            height={40}
           />
         </div>
 
@@ -94,20 +94,32 @@ export default function Hero({ theme , textEnter, textLeave}) {
           <a
             href="https://www.facebook.com/profile.php?id=100079869421580"
             className="icon icon-facebook-square"
+            onMouseEnter={iconsLeave}
+            onMouseLeave={textEnter}
           ></a>
-          <a href="" className="icon icon-instagram"></a>
+          <a
+            href=""
+            className="icon icon-instagram"
+            onMouseEnter={iconsLeave}
+            onMouseLeave={textEnter}
+          ></a>
           <a
             href="https://github.com/Nashaatlattof"
             className="icon icon-github"
+            onMouseEnter={iconsLeave}
+            onMouseLeave={textEnter}
           ></a>
           <a
             href="https://www.linkedin.com/in/nashaat-lattof-17883a252/"
             className="icon icon-linkedin-square"
+            onMouseEnter={iconsLeave}
+            onMouseLeave={textEnter}
           ></a>
         </motion.div>
       </div>
 
       <motion.div
+     
         className="right-section"
         initial={{
           opacity: 0,
@@ -126,6 +138,8 @@ export default function Hero({ theme , textEnter, textLeave}) {
       >
         {" "}
         <Lottie
+        
+
           animationData={theme === "light" ? heroAnimation : heroAnimLight}
         />
       </motion.div>

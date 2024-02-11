@@ -7,7 +7,11 @@ gap: 3rem;
 
 
 }
-
+main .subtitle {
+     margin-bottom: 3rem;
+    color: var(--subtitle);
+    font-size: 1.6rem;
+}
 main .left {
     flex-basis: 40%;
 }
@@ -23,7 +27,7 @@ main .left-section button {
     border: 1px solid var(--border);
     border-radius: 5px;
     padding: 0.75rem 0;
-    width: 150px;
+    width: 180px;
     text-align: center;
     opacity: 0.8;
     transition: .3s;
