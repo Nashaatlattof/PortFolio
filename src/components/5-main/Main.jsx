@@ -11,8 +11,7 @@ export default function Main() {
       imgPath: "Capture10.PNG",
       repoPath:
         "https://github.com/Nashaatlattof/Admin-Dashboard-Ecommerce.git",
-      demoPath:
-        "https://admin-dashboard-ecommerce-52phjnvmq-nashaatlattofs-projects.vercel.app",
+      demoPath: "https://admin-dashboard-ecommerce-one.vercel.app/",
     },
     {
       projectTiltle: "Ecommerce Website",
@@ -20,7 +19,7 @@ export default function Main() {
       imgPath: "Capture20.PNG",
       repoPath:
         "https://github.com/Nashaatlattof/E-commerce-Website-Project.git",
-      demoPath: "https://e-commerce-website-project-12j9-irqlj8zes.vercel.app",
+      demoPath: "https://e-commerce-website-project.vercel.app/",
     },
     {
       projectTiltle: "Portfolio Template",
